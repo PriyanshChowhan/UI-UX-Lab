@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest - Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #fff;
+            background: #f7faff;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            position: relative;
+            height: 50vh;
+            background: url('https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #FFD700;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: #FFD700;
+            margin-top: 10px;
+            z-index: 1;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .event-card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-info {
+            padding: 15px;
+        }
+
+        .event-info h3 {
+            color: #4A148C;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .event-info p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Event Star</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Our Exciting Events</h1>
+        <h2>Experience, Learn & Celebrate</h2>
+    </section>
+
+    <section class="events-grid">
+        <div class="event-card">
+            <img src="https://images.pexels.com/photos/1181260/pexels-photo-1181260.jpeg" alt="Technical Event">
+            <div class="event-info">
+                <h3>Technical</h3>
+                <p>Participate in Coding Marathons, Hackathons, and Robotics challenges to show your skills.</p>
+            </div>
+        </div>
+        <div class="event-card">
+            <img src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg" alt="Cultural Event">
+            <div class="event-info">
+                <h3>Cultural</h3>
+                <p>Showcase your talent in Dance, Singing, Drama, and Fashion Show to mesmerize the audience.</p>
+            </div>
+        </div>
+        <div class="event-card">
+            <img src="https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg" alt="Sports Event">
+            <div class="event-info">
+                <h3>Sports</h3>
+                <p>Compete in Cricket, Basketball, and Badminton to bring glory to your team.</p>
+            </div>
+        </div>
+        <div class="event-card">
+            <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg"
+                alt="Literary Event">
+            <div class="event-info">
+                <h3>Literary</h3>
+                <p>Engage your intellect in Debate, Poetry Slam, and Quiz to prove your mettle.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
