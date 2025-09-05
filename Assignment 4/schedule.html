@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest - Schedule</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7faff;
+            color: #fff;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            position: relative;
+            height: 50vh;
+            background: url('https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #FFD700;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: #FFD700;
+            margin-top: 10px;
+            z-index: 1;
+        }
+
+        .schedule-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .schedule-card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .schedule-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .schedule-card h3 {
+            color: #4A148C;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .schedule-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .results-section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .results-section h2 {
+            color: #4A148C;
+            margin-bottom: 20px;
+        }
+
+        .winner-card {
+            background: #ede7f6;
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .winner-card h3 {
+            color: #4A148C;
+            font-size: 18px;
+        }
+
+        .winner-card p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Event Star</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Event Schedule & Results</h1>
+        <h2>Stay Updated & Celebrate the Winners</h2>
+    </section>
+
+    <section class="schedule-section">
+        <div class="schedule-card">
+            <h3>Coding Marathon</h3>
+            <p><strong>Date:</strong> 10 Mar 2025</p>
+            <p><strong>Time:</strong> 10:00 AM</p>
+            <p><strong>Venue:</strong> Lab 1</p>
+        </div>
+        <div class="schedule-card">
+            <h3>Dance Competition</h3>
+            <p><strong>Date:</strong> 11 Mar 2025</p>
+            <p><strong>Time:</strong> 2:00 PM</p>
+            <p><strong>Venue:</strong> Main Auditorium</p>
+        </div>
+        <div class="schedule-card">
+            <h3>Quiz</h3>
+            <p><strong>Date:</strong> 12 Mar 2025</p>
+            <p><strong>Time:</strong> 11:00 AM</p>
+            <p><strong>Venue:</strong> Conference Hall</p>
+        </div>
+    </section>
+</body>
+
+</html>
