@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Registration Form</h3>
+
+    <form id="Form">
+        Name: <input type="text" id="Name"><br>
+        Email: <input type="text" id="Email"><br>
+        Age: <input type="text" id="Age"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("Form").addEventListener("submit", (event) => {
+            let name = document.getElementById("Name").value;
+            let email = document.getElementById("Email").value;
+            let age = document.getElementById("Age").value;
+
+            if (name === "") {
+                alert("Name cannot be empty");
+                event.preventDefault();
+            }
+            else if (!/^\S+@\S+\.\S+$/.test(email)) {
+                alert("Invalid email format");
+                event.preventDefault();
+            }
+            else if (age < 18 || age > 100) {
+                alert("Age must be between 18 and 100");
+                event.preventDefault();
+            }
+            else {
+                alert("Form submitted successfully!");
+            }
+        });
+    </script>
+</body>
+
+</html>

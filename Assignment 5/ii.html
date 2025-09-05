@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Array Operations</h3>
+    <script>
+        let num = [5, 10, 28, 2, 30, 4];
+
+        let largest = Math.max(...num);
+        let smallest = Math.min(...num);
+        document.write("Largest Number: " + largest + "<br>");
+        document.write("Smallest Number: " + smallest + "<br>");
+
+        num.sort((a, b) => a - b);
+        document.write("Ascending Order: " + num + "<br>");
+
+        num.sort((a, b) => b - a);
+        document.write("Descending Order: " + num + "<br>");
+    </script>
+</body>
+
+</html>
