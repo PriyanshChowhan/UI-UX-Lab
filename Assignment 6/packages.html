@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Travel Agency - Packages</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f4f8; 
+        }
+
+        .intro {
+            padding: 40px;
+            max-width: 1000px;
+            text-align: center;
+            border-radius: 20px;
+            background: #fff; 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0066cc;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            margin-bottom: 25px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 600;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: #0066cc;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden; 
+        }
+
+        th,
+        td {
+            border: 1px solid #e0eaf3;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0066cc;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+
+        .price {
+            font-weight: 700;
+            color: #009933; 
+            text-align: right;
+        }
+
+        td {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        <div class="title">Our Travel Packages</div>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="booking.html">Booking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <table class="packages-table">
+            <thead>
+                <tr>
+                    <th>Package Details</th>
+                    <th>Duration</th>
+                    <th>Base Price</th>
+                    <th>Final Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
